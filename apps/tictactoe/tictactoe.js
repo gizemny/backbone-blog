@@ -26,15 +26,11 @@ function diagonalWin() {
            ($('[data-cell="3"]').text() === playerTurn) && ($('[data-cell="5"]').text() === playerTurn) && ($('[data-cell="7"]').text() === playerTurn) 
 };
 
-
 function checkForWin() {
   if ( horizontalWin() || verticalWin() || diagonalWin() ) {
-    alert('Player ' +  playerTurn + ' Won!');
-    return true;
-  }
-  else {
+    $('#announce-winner').text(('Player ' +  playerTurn + ' Won!'))
     return false;
-  }
+    }
 }
 
 });
