@@ -40,8 +40,9 @@ form {
     text-align: right;
 }
 
-.active {
-    color:#CD5C5C;
+#todo-list li.done  {
+color: #777777;
+text-decoration: line-through;
 }
 
 input[type="submit"] {
