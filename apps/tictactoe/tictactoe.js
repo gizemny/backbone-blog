@@ -33,4 +33,8 @@ function checkForWin() {
     }
 }
 
+$(function() {
+    FastClick.attach(document.body);
+});
+
 });
