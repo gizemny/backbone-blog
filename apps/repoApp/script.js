@@ -27,6 +27,8 @@ $(document).ready(function(){
 				$('#my-repos').append(str);
 			});
 
+		$('project')
+
 		}
 	});
 

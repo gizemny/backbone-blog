@@ -1,0 +1,270 @@
+.container-fluid {
+	padding: 0;
+	overflow: hidden;
+}
+
+.row {
+	width: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+.pt20 {
+	margin-top: 100px;
+}
+
+/*--------Navigation style starts here---------*/
+
+.nav {
+	padding-top: 15px;
+	position: relative;
+	z-index: 10;
+}
+
+.navbar {
+	background-color: white;
+}
+
+.nav li {
+	font-family: Montserrat, sans-serif;
+	font-size: .75em;
+	color: slategrey;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+.nav .center {
+	display: inline-block;
+	float: none;
+	text-align: center;
+}
+
+.nav .text-left {
+	padding-left: 65px;
+}
+
+.nav a{
+	color: slategrey;
+	padding-right: 25px;
+}
+
+.nav a:hover {
+	color: #FF366E;
+	text-decoration: none;
+}
+
+.nav .text-right {
+	padding-right: 40px;
+}
+
+#footer .colophon .love{
+	font-family: Montserrat, sans-serif;
+	font-size: .75em;
+	color: slategrey;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 3px;
+}
+
+#footer .heart {
+	color: #FF366E;
+	padding-top: 5px;
+}
+
+#footer .social {
+	font-size: 1.25em;
+	padding-bottom: 15px;
+
+}
+
+/*-------Start main menu---------*/
+
+#main .content {
+	padding: 5rem 0 12rem 0;
+}
+
+#main .items  {	   
+	width: 200px;
+	margin: auto;
+	/*border: 1px solid gainsboro;*/
+} 
+
+#main .items h2{
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 7px;
+	color: gainsboro;
+	font-weight: 700;
+	background-image: linear-gradient(to bottom, transparent 0%, transparent 45%, gainsboro 45%, gainsboro 55%, transparent 55%, transparent 100%);
+}
+
+#main .filler {
+	background-color: #252628;
+}
+
+#design {
+	padding-left: 12px;
+}
+
+#apps {
+	padding-right: 7px;
+}
+
+#blog {
+	padding-left: 12px;
+	padding-right: 4px;
+}
+
+#contact {
+	padding-right: 4px;
+}
+
+/*------Responsive styling--------*/
+
+@media only screen and (min-width : 480px) {
+#main .items  {
+	padding: 50px;
+	width: 440px;
+}
+
+#main .items h2{
+	font-size: 3.25em;
+	line-height: 1.2em;
+}
+
+#main .filler {
+	background-color: #252628;
+}
+
+#about .copy {
+	font-size: 3.3vw;
+	line-height: 1.75em;
+}
+
+#main a:hover {
+	text-decoration: none;
+	color: slategray;
+}
+
+}
+
+/*---------Paragraph Styling-------*/
+
+#main .intro {
+	font-family: 'Montserrat', sans-serif;
+	text-align: justify;
+	/*letter-spacing: 2px;*/
+	font-size: 1.25em;
+	line-height: 2em;
+	width: 600px;
+	margin: auto;
+	color: #292F56;
+} 
+
+/*------End responsive------*/
+
+#main a {
+	color: #292F56;
+}
+
+#main a:hover {
+	text-decoration: none;
+	color: #FF366E;
+}
+
+/*---------End main menu---------------*/
+
+/*--------About starts here---------*/
+
+#about .content {
+	background-color: #EDE3DE;
+	padding: 8rem 0 12rem 0;
+	background: linear-gradient(90deg, #252628 50%, #EDE3DE 50%);
+}
+
+#about .content p{
+	padding: 8rem 0 12rem 0;
+}
+
+#about .row {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	margin-bottom: 50px;
+	margin-top: 75px;
+}
+
+#about .copy {
+	font-family: 'Vollkorn', serif;
+	font-size: 2vw;
+	line-height: 1.75em;
+	text-align: justify;
+	color: #252628;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#about p {
+	margin-bottom: 20px;
+}
+
+@media only screen and (max-width : 768px) {
+
+#main .items h2{
+	background-image: linear-gradient(to bottom, transparent 0%, transparent 45%, #151515 45%, #151515 55%, transparent 55%, transparent 100%);
+}
+#main .items h2 a:hover {
+	text-decoration: none;
+	color: #151515;
+}
+
+#about .content {
+	padding: 2rem 0 2rem 0;
+	background: linear-gradient(90deg, #EDE3DE 50%, #EDE3DE 50%);
+}
+#about .content p{
+	padding: 0 0 12rem 0;
+}
+
+#main .filler {
+	background-color: #EDE3DE;
+}
+
+#about .row {
+	width: 80%;
+}
+
+#about .copy {
+	font-family: 'Vollkorn', serif;
+	font-size: 4.3vw;
+	text-align: justify;
+	line-height: 1.75em;
+	color: #252628;
+	padding-top: 10%;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+}
+
+/*-----End Media Query------*/
+
+#about a {
+	color: rosybrown;
+}
+
+#about a:hover {
+	text-decoration: none;
+	color: #ccc;
+}
+
+::selection {
+  background: orangered; /* WebKit/Blink Browsers */
+  color:white;
+}
+::-moz-selection {
+  background: orangered; /* Gecko Browsers */
+}
