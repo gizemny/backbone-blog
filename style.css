@@ -170,6 +170,7 @@
 #main a:hover {
 	text-decoration: none;
 	color: #FF366E;
+	cursor:help;
 }
 
 /*---------End main menu---------------*/
@@ -259,6 +260,7 @@
 #about a:hover {
 	text-decoration: none;
 	color: #ccc;
+	cursor:help;
 }
 
 ::selection {
