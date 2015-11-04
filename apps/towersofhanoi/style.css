@@ -34,6 +34,11 @@
     background-color: yellow;
 }
 
+#not-allowed {
+    font-size: 50px;
+    text-align: center;
+}
+
 #announce-game-won {
     font-size: 50px;
     text-align: center;
