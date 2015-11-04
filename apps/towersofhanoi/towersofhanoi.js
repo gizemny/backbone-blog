@@ -1,44 +1,37 @@
 'use strict';
 
 $(document).ready(function() {
-		var $lastChild = null;
+	var $lastChild = null;
 
 	$('[data-stack]').on('click', function () { 
-
-		if ($lastChild) { 
-			if( isLegal($lastChild, $(this)) === false){
-				$('#announce-game-won').text("Move Not Allowed");
-				$('#announce-game-won').fadeOut('slow');
-			} else {
-			// if empty
+		if ($lastChild) {
+			if (isLegal($lastChild, $(this))){
 				$(this).append($lastChild); // append to data-stack
-				if ( checkForWin() === true) {
-					$('announce-game-won').text("You won!");
-					return false;
-				}
+				checkForWin();
 				$lastChild = null; // set lastchild to empty again
-			} 
-		} else { // otherwise
+			} 	
+		}  else { // otherwise
 			$lastChild = $(this).children().last().detach() ; // take the last child and detach it
 		}
+
 	});
 
-
-function isLegal($lastChild, $stack) {
-	if ( parseInt($stack.children().last().attr('data-block')) > parseInt($lastChild.attr('data-block')) || $stack.children().last().attr('data-block') === undefined){	
-		return true;
+	function isLegal($lastChild, $stack) {
+		if ( parseInt($stack.children().last().attr('data-block')) > parseInt($lastChild.attr('data-block')) || $stack.children().length === 0 ){	
+			return true;
 		} else {
-		return false;
-		$('#announce-game-won').text("Move Not Allowed");
-		$('#announce-game-won').fadeOut('slow');
+			$('#not-allowed').html("<span>Move Not Allowed</span>");
+			$('#not-allowed span').fadeOut('slow');
+			return false;
 		} 
 	}
 
-function checkForWin() {
-	if ( $('[data-stack="2"]').first().children().length === 4 || $('[data-stack="3"]').first().children().length === 4)  {
-		return true;
+	function checkForWin() {
+		if ( $('[data-stack="2"]').children().length === 4 || $('[data-stack="3"]').children().length === 4)  {
+			$('#announce-game-won').text("You won!");
+			return true;
 		} else { 
-		return false;
+			return false;
 		}
 	}
 
