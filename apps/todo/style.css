@@ -63,3 +63,8 @@ input[type=text] {
     border-radius: 0px;
     width: 65%;
 }
+
+input[type="checkbox"] {
+    text-align: right;
+    margin-left: 20px;
+}
