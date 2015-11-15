@@ -5,10 +5,9 @@ $(document).ready(function() {
 	 	event.preventDefault();
 	 	var entry = $(this).find('input[type="text"]').val();
 	 	$('#todo-list').append(
-	 		'<li class="list-item">' +entry+  '<input type="checkbox">' + '</li>'
+	 		'<li class="list-item">' +entry+ '</li>'
 	 	);
 	});
-
 
 	$('#todo-list').on('mouseenter','> li', function(event) {
 	   $(this).addClass('done');

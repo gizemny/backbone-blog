@@ -1,15 +1,15 @@
-.container-fluid {
+#home.container-fluid {
 	padding: 0;
 	overflow: hidden;
 }
 
-.row {
+#home.row {
 	width: 100%;
 	margin: 0;
 	overflow: hidden;
 }
 
-.pt20 {
+#home.pt20 {
 	margin-top: 100px;
 }
 
